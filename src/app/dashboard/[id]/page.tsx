@@ -66,9 +66,7 @@ export default function Page() {
   function save() {
     const { "bank.Token": token } = parseCookies();
     const id = urlParams[2];
-    SaveCounter(id, counter, token).then((response) => {
-      console.log(response);
-    });
+    SaveCounter(id, counter, token)
     setIsAltered(false)
   }
 
