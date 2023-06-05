@@ -42,10 +42,10 @@ export default function Dashboard() {
 
   return (
     <main className="h-screen flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-center">
-      <Aside firstName={user?.firstName} lastName={user?.lastName} page="dashboard" />
+      <Aside firstName={user?.firstName} lastName={user?.lastName} page="dashboard"/>
       {!loading && (
         <div className="flex flex-col gap-5 lg:h-96 lg:grid lg:grid-cols-3 lg:content-between">
-          {counter.map((response: { description: string; time: number; createdAt: string; _id: string; }) => (
+          {counter.map(response => (
             <Card text={response?.description} hours={HoursFormat(response?.time)} createdAt={response?.createdAt} id={response._id} />
           ))}
         </div>
