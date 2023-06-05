@@ -10,7 +10,7 @@ import { AuthContext } from "@/context/AuthContext";
 export function Form() {
 
   const { SignIn } = useContext(AuthContext)
-  async function handleSingIn(data) {
+  async function handleSingIn(data : any) {
     await SignIn(data)
   }
 

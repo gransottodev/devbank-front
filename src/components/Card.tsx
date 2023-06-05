@@ -9,7 +9,7 @@ import { useState } from 'react';
 interface CardProps {
   id: string
   text: string;
-  hours: number;
+  hours: string;
   createdAt: string;
 }
 

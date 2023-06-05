@@ -24,7 +24,7 @@ export default function Page() {
   const [isRunning, setIsRunning] = useState(false);
   const [isAltered, setIsAltered] = useState(false)
   const [loading, setLoading] = useState(true)
-  const [counterData, setCounterData] = useState<CounterDataProps | []>([]);
+  const [counterData, setCounterData] = useState<CounterDataProps>();
   const urlParams = usePathname().split("/");
   const route = useRouter();
 
@@ -66,9 +66,7 @@ export default function Page() {
   function save() {
     const { "bank.Token": token } = parseCookies();
     const id = urlParams[2];
-    SaveCounter(id, counter, token).then((response) => {
-      console.log(response);
-    });
+    SaveCounter(id, counter, token)
     setIsAltered(false)
   }
 

@@ -10,7 +10,7 @@ export default function Register() {
   const { register, handleSubmit } = useForm();
   const router = useRouter()
 
-  function handleRegister(data) {
+  function handleRegister(data : any) {
     RegisterUser(data)
     router.push('/')
   }

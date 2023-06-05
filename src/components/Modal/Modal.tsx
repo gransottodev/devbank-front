@@ -26,14 +26,15 @@ export default function Modal() {
     setModalOpen(false);
   }
 
-  function handleChangeDescription(e){
+  function handleChangeDescription(e : any){
     setDescription(e.target.value)
   }
 
   function createCount(){
-    CreateCount(user._id, description, token)
+    CreateCount(user._id, description, token).then(() => {
+      window.location.reload()
+    })
     setModalOpen(false)
-    window.location.reload()
   }
 
   return (

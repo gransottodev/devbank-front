@@ -3,8 +3,8 @@ import user from '../../public/user.jpg'
 import {Loader2} from 'lucide-react'
 
 interface AsideProps {
-  firstName: string;
-  lastName: string;
+  firstName: string | undefined;
+  lastName: string | undefined;
   page: string;
 }
 

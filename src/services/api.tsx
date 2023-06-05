@@ -55,7 +55,7 @@ async function GetCounter(id: string, token: string) {
   return result.data
 }
 
-async function SaveCounter(id : string, time : number, token) {
+async function SaveCounter(id : string, time : number, token : string) {
 
   const result = await axios.put(`${url}/v1/counter`, {
     id, 
