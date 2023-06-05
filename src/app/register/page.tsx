@@ -16,7 +16,7 @@ export default function Register() {
   }
 
   return (
-    <main className="flex h-auto justify-center items-center">
+    <main className="flex h-screen justify-center items-center">
       <form
         className="flex flex-col gap-3 p-2 items-center h-screen w-full lg:p-4 lg:gap-5 bg-white rounded-lg lg:w-3/4 lg:h-5/6"
         onSubmit={handleSubmit(handleRegister)}

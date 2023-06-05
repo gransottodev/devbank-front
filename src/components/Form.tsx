@@ -47,7 +47,7 @@ export function Form() {
           {...register('password')}
         />
       </div>
-      <div className="flex flex-col w-full gap-2">
+      <div className="flex flex-col w-full gap-2 lg:mt-14">
         <button className="bg-cardbg text-white w-full p-2 border-0 rounded-md hover:brightness-125">
           SingIn
         </button>
