@@ -41,7 +41,7 @@ export default function Dashboard() {
 
   return (
     <main className="h-screen flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-center">
-      <Aside firstName={user?.firstName} lastName={user?.lastName} page="dashboard" />
+      <Aside firstName={user?.firstName} lastName={user?.lastName} page="dashboard" key={user?._id}/>
       {!loading && (
         <div className="flex flex-col gap-5 lg:h-96 lg:grid lg:grid-cols-3 lg:content-between">
           {counter.map(response => (
