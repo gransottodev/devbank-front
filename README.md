@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevBank 🚀
 
-## Getting Started
+## Sobre
 
-First, run the development server:
+Sistema de contagem de horas para projetos utilizando NextJS
+![image](https://github.com/gransottodev/devbank-front/assets/101595139/924c4901-642c-49b1-a12c-4d2e1fce4b86)
+![image](https://github.com/gransottodev/devbank-front/assets/101595139/c527140b-1289-4b36-b238-c6bcc0f65382)
+![image](https://github.com/gransottodev/devbank-front/assets/101595139/55f8199c-241a-4ce8-83a1-9bc657b20d77)
+![image](https://github.com/gransottodev/devbank-front/assets/101595139/6f8dd284-440e-4cef-acf1-c3393b238a73)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+## Getting Started ✨
+
+
+### 📋 Pré-requisitos
+O que você precisa para instalar o software?
+```
+  Node.js Versão 18.16.0 (Que no momento é a versão LTS)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Instalação ⬇️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Para baixar esse repositório utilize o comando em seu terminal:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+$ git clone https://github.com/gransottodev/devbank-front.git
+```
 
-## Learn More
+2. Instalando as dependencias:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+#or
+yarn install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Rodando o projeto ✅
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+yarn dev
+```
+Estará disponível em : http:localhost:3000 após a inicialização <br/>
+Se preferir pode utilizar a versão online já disponível em: https://devbank-fullstack.vercel.app
 
-## Deploy on Vercel
+### Utilização
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para utilizar o sistema realize seu cadastro em /register para que seu usuário seja criado.
+Após isso realize o login para ter acesso ao seu token de authenticação e navegue livremente pelo sistema
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Os contadores servem para organização e acompanhamento do tempo gasto em seus projetos.
+
+## Tecnologias utilizadas 💻:
+
+```
+ NextJS ✅
+ ContextAPI ✅
+ JsonWebToken✅
+ MongoDB ✅
+ Express ✅
+ TailwindCss ✅
+```
+
+<hr>
+
+## Referências para esse projeto ℹ️ :
+
+* [Express](expressjs.com)
+* [NodeJS](https://nodejs.org/en)
+* [MongoDB](https://www.mongodb.com)
+* [TailwindCss](https://tailwindcss.com)
+<hr>
